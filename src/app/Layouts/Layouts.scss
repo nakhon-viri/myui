@@ -1,0 +1,110 @@
+$navbar-hight: 48px;
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100%;
+  background-color: var(--theme-layout);
+  .content-sidebar {
+    max-width: 100%;
+    overflow: auto;
+    .sidebar-section {
+      .sidebar-links-header {
+        color: rgba(var(--vs-theme-color), 1);
+        transition: color 0.15s ease;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 700;
+        padding: 0.35rem 1.5rem 0.35rem 1.25rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border-left: 0.25rem solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
+    .sidebar-group-links {
+      transition: all 0.15s ease;
+      .sidebar-link {
+        font-size: 0.95rem;
+        display: inline-block;
+        color: rgba(var(--vs-theme-color), 1);
+        padding: 0.3rem 1rem 0.3rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        transition: all 0.25s ease;
+        opacity: 0.5;
+        font-weight: 400;
+        position: relative;
+        margin-left: 0;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .header-siderbar {
+    height: $navbar-hight;
+    display: flex;
+    align-items: center;
+    .logo {
+      display: flex;
+      justify-content: center;
+      gap: 2px;
+      width: 100%;
+      .logo-name {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.layout-page-wrapper {
+  margin-left: 240px;
+  position: relative;
+}
+.page {
+  background-color: var(--theme-bg);
+
+  margin-top: $navbar-hight;
+  border-top-left-radius: var(--radius);
+  .radius-page {
+    position: fixed;
+    top: $navbar-hight;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 30px;
+    box-shadow: -10px -10px 0 0 #fff;
+  }
+  .radius-config {
+    position: fixed;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -10px 10px 0 0 #fff;
+  }
+  .config {
+    position: fixed;
+    bottom: 0;
+    width: 100px;
+    height: 40px;
+    background-color: var(--theme-layout);
+    border-top-right-radius: var(--radius);
+  }
+}
+.navbar {
+  height: $navbar-hight;
+  background-color: var(--theme-layout);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  border-top-left-radius: 20px;
+}

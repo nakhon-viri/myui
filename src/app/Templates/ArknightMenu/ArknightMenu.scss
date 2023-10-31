@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+.arknight-menu-host {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  background-image: url("https://pbs.twimg.com/media/EVPZSSzUUAIBswf?format=jpg&name=large");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  & * {
+    font-family: "Oswald", sans-serif;
+    color: black;
+  }
+  .test {
+    position: absolute;
+    top: 8px;
+    // bottom: 0px;
+    right: 8px;
+    width: 40%;
+    transform: rotate(2deg);
+    // skewX(2deg);;
+    .arknight-menu-right-wrapper {
+      height: 100%;
+      transform: matrix3d(1, 0, 0, -0.0008, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 24px;
+        width: 100%;
+        .coin {
+          width: 100%;
+          background-color: rgba($color: #1c1c1c, $alpha: 0.25);
+          color: white;
+        }
+        .store {
+          padding: 0;
+          padding-left: 30px;
+          padding-top: 15px;
+          width: 85%;
+          height: 70px;
+          background-color: #33bef9;
+
+          color: white;
+        }
+        .combat {
+          padding-left: 0px;
+          width: 95%;
+          height: 100px;
+          background-color: #f4f4f4;
+        }
+        .mission {
+          padding-left: 10px;
+          width: 45%;
+          height: 70px;
+          background-color: #f4f4f4;
+        }
+        .base {
+          padding-left: 10px;
+          width: 45%;
+          height: 70px;
+          background-color: #f4f4f4;
+        }
+        .box {
+          padding-left: 10px;
+          background-color: #f4f4f4;
+          width: 50%;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
