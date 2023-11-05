@@ -66,6 +66,7 @@ const ArknightMenu = () => {
             <div className="menu">
               <div className="squads">Squads</div>
               <div className="Operator">Operator</div>
+              <div className="black-box"></div>
             </div>
             <div className="menu">
               <div className="store">Store</div>
