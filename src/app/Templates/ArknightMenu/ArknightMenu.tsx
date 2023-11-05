@@ -1,6 +1,5 @@
 import "./ArknightMenu.scss";
 import w from "../../../assets/images/W.webp";
-// import C from "../../../assets/images/chess-rook-alt.svg";
 
 const ArknightMenu = () => {
   return (
@@ -17,22 +16,12 @@ const ArknightMenu = () => {
       />
       <div className="arknight-menu-host mb-10">
         <img src={w} alt="" style={{ height: "500px" }} className="ml-16" />
-        <svg
-          viewBox="25 25 50 50"
-          className="p-progress-spinner-svg"
-          data-pc-section="root"
-          style={{ animationDuration: " 0.5s" }}
-        >
-          <circle
-            cx="50"
-            cy="50"
-            r="20"
-            stroke-miterlimit="10"
-            className="p-progress-spinner-circle"
-            fill="var(--surface-ground)"
-            stroke-width="8"
-          ></circle>
-        </svg>
+        <div className="menu-account">
+          <span className="icon-setting"></span>
+          <span className="icon-alert"></span>
+          <span className="icon-mail"></span>
+          <span className="icon-event"></span>
+        </div>
         <div className="test2">
           <div className="arknight-menu-left-wrapper">
             <div className="menu">
