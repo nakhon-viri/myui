@@ -186,13 +186,12 @@
           background-color: rgba($color: #f4f4f4, $alpha: 0.95);
         }
         .squads {
-          // padding-left: 5%;
           background: url(../../../assets/images/background-arknight-menu-squads.png);
           background-size: 100% 100%;
           background-repeat: no-repeat;
           width: 40%;
           height: 60px;
-          // font-size: 24px;
+          padding-left: 10px;
           position: relative;
           .chess {
             position: absolute;
@@ -209,15 +208,17 @@
           }
         }
         .Operator {
+          background: url(../../../assets/images/background-arknight-menu-operator.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
           padding-left: 10px;
-          background-color: rgba($color: #f4f4f4, $alpha: 0.95);
           width: 45%;
           height: 60px;
         }
         .black-box {
           width: 10%;
           height: 60px;
-          background-color: rgba($color: #000000, $alpha: 0.2);
+          background-color: rgba($color: #dadada, $alpha: 0.8);
         }
       }
     }
